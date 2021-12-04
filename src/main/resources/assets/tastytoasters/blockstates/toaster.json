@@ -1,5 +1,34 @@
 {
   "variants": {
-    "": { "model":  "tastytoasters:block/toaster"}
+    "facing=east,toasting=false": {
+      "model":  "tastytoasters:block/toaster",
+      "y": 90
+    },
+    "facing=north,toasting=false": {
+      "model": "tastytoasters:block/toaster"
+    },
+    "facing=south,toasting=false": {
+      "model": "tastytoasters:block/toaster",
+      "y": 180
+    },
+    "facing=west,toasting=false": {
+      "model": "tastytoasters:block/toaster",
+      "y": 270
+    },
+    "facing=east,toasting=true": {
+      "model": "tastytoasters:block/toaster_filled",
+      "y": 90
+    },
+    "facing=north,toasting=true": {
+      "model": "tastytoasters:block/toaster_filled"
+    },
+    "facing=south,toasting=true": {
+      "model": "tastytoasters:block/toaster_filled",
+      "y": 180
+    },
+    "facing=west,toasting=true": {
+      "model": "tastytoasters:block/toaster_filled",
+      "y": 270
+    }
   }
 }

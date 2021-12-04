@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="uhm what?">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/tastytoasters/loot_tables/blocks/toaster.json" afterDir="false" />
+    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="added toaster block hardness and tool requirement">
+      <change afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlockEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/models/block/toaster_filled.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/tastytoasters.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/tastytoasters.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/tastytoasters.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/tastytoasters.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/loot_tables/blocks/toasters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/minecraft/tags/blocks/mineable/pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/minecraft/tags/blocks/needs_stone_tool.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/needs_stone_tool.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/Tastytoasters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/Tastytoasters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/blockstates/toaster.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/blockstates/toaster.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +53,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="tastytoasters" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="fabric" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="tastytoasters" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -99,17 +95,61 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
-    <configuration name="/Users/blackfur/IdeaProjects/tastytoasters" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="tastytoasters [genSources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
+          <list>
+            <option value="genSources" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="tastytoasters [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
           <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="tastytoasters [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="javadoc" />
+          </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
@@ -162,9 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.tastytoasters [jar]" />
+        <item itemvalue="Gradle.tastytoasters [javadoc]" />
+        <item itemvalue="Gradle.tastytoasters [genSources]" />
         <item itemvalue="Gradle.tastytoasters [runClient]" />
         <item itemvalue="Gradle.tastytoasters [migrateMappings]" />
-        <item itemvalue="Gradle./Users/blackfur/IdeaProjects/tastytoasters" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638614632820</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added toaster block hardness and tool requirement">
+      <created>1638615794540</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1638615794540</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +258,7 @@
     <MESSAGE value="Basic setup" />
     <MESSAGE value="Upgraded to 1.18" />
     <MESSAGE value="uhm what?" />
-    <option name="LAST_COMMIT_MESSAGE" value="uhm what?" />
+    <MESSAGE value="added toaster block hardness and tool requirement" />
+    <option name="LAST_COMMIT_MESSAGE" value="added toaster block hardness and tool requirement" />
   </component>
 </project>
