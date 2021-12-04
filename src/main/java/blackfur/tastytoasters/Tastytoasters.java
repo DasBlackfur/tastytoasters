@@ -19,7 +19,7 @@ public class Tastytoasters implements ModInitializer {
     public static final Item BUTTER_ITEM = new ButterItem();
     public static final Item BUTTERED_TOAST_ITEM = new ButteredToastItem();
 
-    public static final ToasterBlock TOASTER_BLOCK = new ToasterBlock(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
+    public static final ToasterBlock TOASTER_BLOCK = new ToasterBlock(FabricBlockSettings.of(Material.METAL).hardness(4.0f).requiresTool());
     
     @Override
     public void onInitialize() {
