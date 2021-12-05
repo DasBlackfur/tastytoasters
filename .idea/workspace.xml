@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="added toaster block hardness and tool requirement">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlockEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/models/block/toaster_filled.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/tastytoasters.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/tastytoasters.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/tastytoasters.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/tastytoasters.test.iml" afterDir="false" />
+    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="so much fucking work!!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/Tastytoasters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/Tastytoasters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/blockstates/toaster.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/blockstates/toaster.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlockEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlockEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638615794540</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="so much fucking work!!!">
+      <created>1638638076796</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638638076796</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +260,7 @@
     <MESSAGE value="Upgraded to 1.18" />
     <MESSAGE value="uhm what?" />
     <MESSAGE value="added toaster block hardness and tool requirement" />
-    <option name="LAST_COMMIT_MESSAGE" value="added toaster block hardness and tool requirement" />
+    <MESSAGE value="so much fucking work!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="so much fucking work!!!" />
   </component>
 </project>
