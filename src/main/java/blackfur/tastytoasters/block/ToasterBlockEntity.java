@@ -11,18 +11,23 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class ToasterBlockEntity extends BlockEntity {
-    private int cookTicks;
+    private static int cookTicks;
 
     public ToasterBlockEntity(BlockPos pos, BlockState state) {
         super(Tastytoasters.TOASTER_BLOCK_ENTITY, pos, state);
     }
 
     public static void tick(World world, BlockPos pos, BlockState state, ToasterBlockEntity be) {
-
+        if (state.get(ToasterBlock.TOASTING)) {
+            if (cookTicks <= 0) {
+                world.setBlockState(pos, state.with(ToasterBlock.TOASTING, false));
+            }
+            cookTicks--;
+        }
     }
 
-    public void handleUse(PlayerEntity player, Hand hand, ItemStack itemStack) {
-
+    public void handleUse() {
+        cookTicks = 10*20;
     }
 
     @Override
