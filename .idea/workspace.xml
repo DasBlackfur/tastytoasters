@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="I did a thing and nothing broke OMG">
+    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="commit so I don't loose progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlockEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlockEntity.java" afterDir="false" />
@@ -248,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638722000773</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit so I don't loose progress">
+      <created>1638725152334</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638725152334</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,6 +276,7 @@
     <MESSAGE value="added toaster block hardness and tool requirement" />
     <MESSAGE value="so much fucking work!!!" />
     <MESSAGE value="I did a thing and nothing broke OMG" />
-    <option name="LAST_COMMIT_MESSAGE" value="I did a thing and nothing broke OMG" />
+    <MESSAGE value="commit so I don't loose progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit so I don't loose progress" />
   </component>
 </project>

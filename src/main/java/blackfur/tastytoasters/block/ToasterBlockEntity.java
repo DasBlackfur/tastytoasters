@@ -3,15 +3,14 @@ package blackfur.tastytoasters.block;
 import blackfur.tastytoasters.Tastytoasters;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.ItemEntity;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class ToasterBlockEntity extends BlockEntity {
-    private static int cookTicks;
+    private int cookTicks;
 
     public ToasterBlockEntity(BlockPos pos, BlockState state) {
         super(Tastytoasters.TOASTER_BLOCK_ENTITY, pos, state);
@@ -19,15 +18,16 @@ public class ToasterBlockEntity extends BlockEntity {
 
     public static void tick(World world, BlockPos pos, BlockState state, ToasterBlockEntity be) {
         if (state.get(ToasterBlock.TOASTING)) {
-            if (cookTicks <= 0) {
+            if (be.cookTicks <= 0) {
                 world.setBlockState(pos, state.with(ToasterBlock.TOASTING, false));
+                world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY() + 0.5, pos.getZ(), Tastytoasters.TOAST_ITEM.getDefaultStack()));
             }
-            cookTicks--;
+            be.cookTicks--;
         }
     }
 
     public void handleUse() {
-        cookTicks = 10*20;
+        cookTicks = 90*20;
     }
 
     @Override

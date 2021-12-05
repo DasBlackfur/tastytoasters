@@ -114,6 +114,6 @@ public class ToasterBlock extends BlockWithEntity implements BlockEntityProvider
     }
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, Tastytoasters.TOASTER_BLOCK_ENTITY, ToasterBlockEntity::tick);
+        return checkType(type, Tastytoasters.TOASTER_BLOCK_ENTITY, (world1, pos, state1, be) -> ToasterBlockEntity.tick(world1, pos, state1, be));
     }
 }
