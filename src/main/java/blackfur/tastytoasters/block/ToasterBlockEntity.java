@@ -6,6 +6,7 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -20,14 +21,18 @@ public class ToasterBlockEntity extends BlockEntity {
         if (state.get(ToasterBlock.TOASTING)) {
             if (be.cookTicks <= 0) {
                 world.setBlockState(pos, state.with(ToasterBlock.TOASTING, false));
-                world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY() + 0.5, pos.getZ(), Tastytoasters.TOAST_ITEM.getDefaultStack()));
+               if ((int) (Math.random() * 10) == 0) {
+                   world.spawnEntity(new ItemEntity(world,  pos.getX(), pos.getY() + 0.5, pos.getZ(), Tastytoasters.BURNT_TOAST_ITEM.getDefaultStack()));
+               } else {
+                   world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY() + 0.5, pos.getZ(), Tastytoasters.TOAST_ITEM.getDefaultStack()));
+               }
             }
             be.cookTicks--;
         }
     }
 
     public void handleUse() {
-        cookTicks = 90*20;
+        cookTicks = 45*20;
     }
 
     @Override

@@ -37,6 +37,7 @@ public class ToasterBlock extends BlockWithEntity implements BlockEntityProvider
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!player.isSneaking() && world.getBlockEntity(pos) instanceof ToasterBlockEntity toasterBlockEntity) {
             if (player.getStackInHand(hand).getItem() == Tastytoasters.RAW_TOAST_ITEM) {
+                player.getStackInHand(hand).setCount(player.getStackInHand(hand).getCount()-1);
                 world.setBlockState(pos, state.with(TOASTING, true));
                 toasterBlockEntity.handleUse();
             }
