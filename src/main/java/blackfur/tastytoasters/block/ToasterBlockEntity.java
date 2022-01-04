@@ -8,10 +8,9 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.fabricmc.fabric.api.block.entity.BlockEntityClientSerializable;
 
 
-public class ToasterBlockEntity extends BlockEntity implements BlockEntityClientSerializable {
+public class ToasterBlockEntity extends BlockEntity {
     private int cookTicks;
 
     public ToasterBlockEntity(BlockPos pos, BlockState state) {
@@ -51,5 +50,12 @@ public class ToasterBlockEntity extends BlockEntity implements BlockEntityClient
     public void readNbt(NbtCompound tag) {
         super.readNbt(tag);
         cookTicks = tag.getInt("cookTime");
+    }
+
+    @Override
+    public NbtCompound toInitialChunkDataNbt() {
+        NbtCompound tag = super.toInitialChunkDataNbt();
+        tag.putInt("cookTime", cookTicks);
+        return tag;
     }
 }
