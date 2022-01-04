@@ -3,14 +3,15 @@ package blackfur.tastytoasters.block;
 import blackfur.tastytoasters.Tastytoasters;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.fabricmc.fabric.api.block.entity.BlockEntityClientSerializable;
 
-public class ToasterBlockEntity extends BlockEntity {
+
+public class ToasterBlockEntity extends BlockEntity implements BlockEntityClientSerializable {
     private int cookTicks;
 
     public ToasterBlockEntity(BlockPos pos, BlockState state) {
@@ -19,6 +20,9 @@ public class ToasterBlockEntity extends BlockEntity {
 
     public static void tick(World world, BlockPos pos, BlockState state, ToasterBlockEntity be) {
         if (state.get(ToasterBlock.TOASTING)) {
+            if (be.cookTicks % 100 == 0) {
+                world.addParticle(ParticleTypes.SMOKE, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, 0, 0, 0);
+            }
             if (be.cookTicks <= 0) {
                 world.setBlockState(pos, state.with(ToasterBlock.TOASTING, false));
                if ((int) (Math.random() * 10) == 0) {
@@ -28,6 +32,8 @@ public class ToasterBlockEntity extends BlockEntity {
                }
             }
             be.cookTicks--;
+
+            be.markDirty();
         }
     }
 
