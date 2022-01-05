@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="welll it seems there is a fabric api bug">
+    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="Finally fixed a dumb sync issue :D">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlockEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlockEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641316900137</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finally fixed a dumb sync issue :D">
+      <created>1641323089333</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641323089333</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,6 +305,7 @@
     <MESSAGE value="toasting now fully implemented :DDD" />
     <MESSAGE value="Its pretty much finished?" />
     <MESSAGE value="welll it seems there is a fabric api bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="welll it seems there is a fabric api bug" />
+    <MESSAGE value="Finally fixed a dumb sync issue :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finally fixed a dumb sync issue :D" />
   </component>
 </project>
