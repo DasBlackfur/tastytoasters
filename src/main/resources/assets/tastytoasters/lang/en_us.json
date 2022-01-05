@@ -5,11 +5,13 @@
   "item.tastytoasters.toast.tooltip": "Tasty but you can do better",
   "item.tastytoasters.burnt_toast": "Burnt Toast",
   "item.tastytoasters.burnt_toast.tooltip": "What have you done??",
-  "item.tastytoasters.butter": "Butter,",
+  "item.tastytoasters.butter": "Butter",
   "item.tastytoasters.butter.tooltip.1": "A yummy ingredient that",
   "item.tastytoasters.butter.tooltip.2": "inherits milk properties",
   "item.tastytoasters.buttered_toast": "Buttered Toast",
   "item.tastytoasters.buttered_toast.tooltip": "So great, but not shiny enough",
   "block.tastytoasters.toaster": "Toaster",
-  "block.tastytoasters.toaster.tooltip": "The gate to happiness"
+  "block.tastytoasters.toaster.tooltip": "The gate to happiness",
+  "subtitles.tastytoasters.toaster_lock": "Toaster locks",
+  "subtitles.tastytoasters.toaster_release": "Toaster releases"
 }

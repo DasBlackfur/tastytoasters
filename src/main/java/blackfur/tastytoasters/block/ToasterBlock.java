@@ -7,6 +7,7 @@ import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
@@ -40,6 +41,16 @@ public class ToasterBlock extends BlockWithEntity implements BlockEntityProvider
                 player.getStackInHand(hand).setCount(player.getStackInHand(hand).getCount()-1);
                 world.setBlockState(pos, state.with(TOASTING, true));
                 toasterBlockEntity.handleUse();
+                if (!world.isClient) {
+                    world.playSound(
+                            null,
+                            pos,
+                            Tastytoasters.TOASTER_LOCK_SOUND_EVENT,
+                            SoundCategory.BLOCKS,
+                            1.0F,
+                            1.0F
+                    );
+                }
             }
             return ActionResult.success(world.isClient());
         }

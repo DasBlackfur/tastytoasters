@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="Finally fixed a dumb sync issue :D">
+    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="one texture file was missing">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/sounds.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/sounds/toaster_lock.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/sounds/toaster_release.ogg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/Tastytoasters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/Tastytoasters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlockEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlockEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/lang/en_us.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +105,7 @@
       <recent name="$PROJECT_DIR$/Temp" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.tastytoasters [runClient]">
+  <component name="RunManager" selected="Gradle.tastytoasters [build]">
     <configuration name="tastytoasters [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -195,8 +202,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.tastytoasters [buildDependents]" />
         <item itemvalue="Gradle.tastytoasters [build]" />
+        <item itemvalue="Gradle.tastytoasters [buildDependents]" />
         <item itemvalue="Gradle.tastytoasters [runClient]" />
       </list>
     </recent_temporary>
@@ -280,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641323089333</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="one texture file was missing">
+      <created>1641398298085</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641398298085</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,6 +320,7 @@
     <MESSAGE value="Its pretty much finished?" />
     <MESSAGE value="welll it seems there is a fabric api bug" />
     <MESSAGE value="Finally fixed a dumb sync issue :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally fixed a dumb sync issue :D" />
+    <MESSAGE value="one texture file was missing" />
+    <option name="LAST_COMMIT_MESSAGE" value="one texture file was missing" />
   </component>
 </project>

@@ -6,6 +6,7 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -19,16 +20,26 @@ public class ToasterBlockEntity extends BlockEntity {
 
     public static void tick(World world, BlockPos pos, BlockState state, ToasterBlockEntity be) {
         if (state.get(ToasterBlock.TOASTING)) {
-            if (be.cookTicks % 100 == 0) {
+            if (be.cookTicks % 50 == 0) {
                 world.addParticle(ParticleTypes.SMOKE, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, 0, 0, 0);
             }
             if (be.cookTicks <= 0) {
                 world.setBlockState(pos, state.with(ToasterBlock.TOASTING, false));
-               if ((int) (Math.random() * 10) == 0) {
-                   world.spawnEntity(new ItemEntity(world,  pos.getX(), pos.getY() + 0.5, pos.getZ(), Tastytoasters.BURNT_TOAST_ITEM.getDefaultStack()));
-               } else {
-                   world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY() + 0.5, pos.getZ(), Tastytoasters.TOAST_ITEM.getDefaultStack()));
-               }
+                if (!world.isClient) {
+                    world.playSound(
+                            null,
+                            pos,
+                            Tastytoasters.TOASTER_RELEASE_SOUND_EVENT,
+                            SoundCategory.BLOCKS,
+                            1.0F,
+                            1.0F
+                    );
+                }
+                if ((int) (Math.random() * 10) == 0) {
+                    world.spawnEntity(new ItemEntity(world,  pos.getX(), pos.getY() + 0.5, pos.getZ(), Tastytoasters.BURNT_TOAST_ITEM.getDefaultStack()));
+                } else {
+                    world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY() + 0.5, pos.getZ(), Tastytoasters.TOAST_ITEM.getDefaultStack()));
+                }
             }
             be.cookTicks--;
 

@@ -1,0 +1,14 @@
+{
+  "toaster_lock": {
+    "subtitle": "subtitles.tastytoasters.toaster_lock",
+    "sounds": [
+      "tastytoasters:toaster_lock"
+    ]
+  },
+  "toaster_release": {
+    "subtitle": "subtitles.tastytoasters.toaster_release",
+    "sounds": [
+      "tastytoasters:toaster_release"
+    ]
+  }
+}
