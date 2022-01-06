@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="fixed a bunch of typos and added sounds :D">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/items/GoldenToastItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/textures/item/golden_toast.png" afterDir="false" />
+    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="Added a Golden Toast similar to the Golden Apple">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/models/item/golden_toast.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/Tastytoasters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/Tastytoasters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/items/ToasterItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/items/ToasterItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/lang/en_us.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641409229142</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added a Golden Toast similar to the Golden Apple">
+      <created>1641490201054</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1641490201054</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,6 +331,7 @@
     <MESSAGE value="Finally fixed a dumb sync issue :D" />
     <MESSAGE value="one texture file was missing" />
     <MESSAGE value="fixed a bunch of typos and added sounds :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed a bunch of typos and added sounds :D" />
+    <MESSAGE value="Added a Golden Toast similar to the Golden Apple" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a Golden Toast similar to the Golden Apple" />
   </component>
 </project>
