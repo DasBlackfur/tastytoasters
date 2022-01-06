@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ToasterItem extends BlockItem {
     public ToasterItem(Block block) {
-        super(block, new FabricItemSettings().group(ItemGroup.FOOD));
+        super(block, new FabricItemSettings().group(ItemGroup.DECORATIONS));
     }
 
     @Override

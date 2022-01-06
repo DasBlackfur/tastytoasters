@@ -4,13 +4,18 @@ import blackfur.tastytoasters.block.ToasterBlock;
 import blackfur.tastytoasters.block.ToasterBlockEntity;
 import blackfur.tastytoasters.items.*;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
+import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.Material;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.loot.LootTables;
+import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -22,6 +27,7 @@ public class Tastytoasters implements ModInitializer {
     public static final Item BURNT_TOAST_ITEM = new BurntToastItem();
     public static final Item BUTTER_ITEM = new ButterItem();
     public static final Item BUTTERED_TOAST_ITEM = new ButteredToastItem();
+    public static final Item GOLDEN_TOAST_ITEM = new GoldenToastItem();
 
     public static final ToasterBlock TOASTER_BLOCK = new ToasterBlock(FabricBlockSettings.of(Material.METAL).hardness(4.0f).requiresTool());
 
@@ -31,7 +37,7 @@ public class Tastytoasters implements ModInitializer {
     public static final Identifier TOASTER_RELEASE_SOUND_ID = new Identifier("tastytoasters:toaster_release");
     public static SoundEvent TOASTER_LOCK_SOUND_EVENT = new SoundEvent(TOASTER_LOCK_SOUND_ID);
     public static SoundEvent TOASTER_RELEASE_SOUND_EVENT = new SoundEvent(TOASTER_RELEASE_SOUND_ID);
-    
+
     @Override
     public void onInitialize() {
         Registry.register(Registry.ITEM, new Identifier("tastytoasters", "raw_toast"), RAW_TOAST_ITEM);
@@ -39,6 +45,7 @@ public class Tastytoasters implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("tastytoasters", "burnt_toast"), BURNT_TOAST_ITEM);
         Registry.register(Registry.ITEM, new Identifier("tastytoasters", "butter"), BUTTER_ITEM);
         Registry.register(Registry.ITEM, new Identifier("tastytoasters", "buttered_toast"), BUTTERED_TOAST_ITEM);
+        Registry.register(Registry.ITEM, new Identifier("tastytoasters", "golden_toast"), GOLDEN_TOAST_ITEM);
 
         Registry.register(Registry.BLOCK, new Identifier("tastytoasters", "toaster"), TOASTER_BLOCK);
         Registry.register(Registry.ITEM, new Identifier("tastytoasters", "toaster"), new BlockItem(TOASTER_BLOCK, new Item.Settings().group(ItemGroup.FOOD)));
@@ -47,5 +54,7 @@ public class Tastytoasters implements ModInitializer {
 
         Registry.register(Registry.SOUND_EVENT, TOASTER_LOCK_SOUND_ID, TOASTER_LOCK_SOUND_EVENT);
         Registry.register(Registry.SOUND_EVENT, TOASTER_RELEASE_SOUND_ID, TOASTER_RELEASE_SOUND_EVENT);
+
+        FuelRegistry.INSTANCE.add(BURNT_TOAST_ITEM, 1600);
     }
 }

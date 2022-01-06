@@ -10,6 +10,8 @@
   "item.tastytoasters.butter.tooltip.2": "inherits milk properties",
   "item.tastytoasters.buttered_toast": "Buttered Toast",
   "item.tastytoasters.buttered_toast.tooltip": "So great, but not shiny enough",
+  "item.tastytoasters.golden_toast": "Golden Toast",
+  "item.tastytoasters.golden_toast.tooltip": "The most shiny of them all",
   "block.tastytoasters.toaster": "Toaster",
   "block.tastytoasters.toaster.tooltip": "The gate to happiness",
   "subtitles.tastytoasters.toaster_lock": "Toaster locks",
