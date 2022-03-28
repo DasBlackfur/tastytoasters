@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:gold_ingot"
+    },
+    "B": {
+      "item": "tastytoasters:buttered_toast"
+    }
+  },
+  "result": {
+    "item": "tastytoasters:golden_toast",
+    "count": 1
+  }
+}

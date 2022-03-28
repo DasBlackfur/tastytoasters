@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="Added a Golden Toast similar to the Golden Apple">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tastytoasters/models/item/golden_toast.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/tastytoasters/recipes/golden_toast.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/Tastytoasters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/Tastytoasters.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
