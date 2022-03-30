@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="Added a Golden Toast similar to the Golden Apple">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/tastytoasters/recipes/golden_toast.json" afterDir="false" />
+    <list default="true" id="9d600e86-9aa6-49ee-bbc5-e23128c6a4d1" name="Changes" comment="Added recipe to Golden Apples">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackfur/tastytoasters/block/ToasterBlock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +100,7 @@
       <recent name="$PROJECT_DIR$/Temp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Minecraft Client">
+  <component name="RunManager" selected="Gradle.tastytoasters [build]">
     <configuration name="tastytoasters [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -133,6 +134,27 @@
         <option name="taskNames">
           <list>
             <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="tastytoasters [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -193,10 +215,12 @@
       <item itemvalue="Gradle.tastytoasters [build]" />
       <item itemvalue="Gradle.tastytoasters [buildDependents]" />
       <item itemvalue="Gradle.tastytoasters [runClient]" />
+      <item itemvalue="Gradle.tastytoasters [jar]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.tastytoasters [build]" />
+        <item itemvalue="Gradle.tastytoasters [jar]" />
         <item itemvalue="Gradle.tastytoasters [buildDependents]" />
         <item itemvalue="Gradle.tastytoasters [runClient]" />
       </list>
@@ -302,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641490201054</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added recipe to Golden Apples">
+      <created>1648484083386</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1648484083386</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -331,6 +362,7 @@
     <MESSAGE value="one texture file was missing" />
     <MESSAGE value="fixed a bunch of typos and added sounds :D" />
     <MESSAGE value="Added a Golden Toast similar to the Golden Apple" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a Golden Toast similar to the Golden Apple" />
+    <MESSAGE value="Added recipe to Golden Apples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added recipe to Golden Apples" />
   </component>
 </project>
