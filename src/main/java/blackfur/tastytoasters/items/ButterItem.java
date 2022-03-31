@@ -20,7 +20,7 @@ public class ButterItem extends Item {
         super(new FabricItemSettings()
                 .group(ItemGroup.FOOD)
                 .food(new FoodComponent.Builder()
-                        .hunger(0)
+                        .hunger(1)
                         .saturationModifier(0.1f)
                         .alwaysEdible()
                         .snack()

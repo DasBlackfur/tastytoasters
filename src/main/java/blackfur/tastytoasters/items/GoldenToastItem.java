@@ -21,7 +21,7 @@ public class GoldenToastItem extends Item {
         super(new FabricItemSettings()
                 .group(ItemGroup.FOOD)
                 .food(new FoodComponent.Builder()
-                        .hunger(4)
+                        .hunger(8)
                         .saturationModifier(2.4f)
                         .statusEffect(new StatusEffectInstance(
                                 StatusEffect.byRawId(22),
